@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "251296526660",
+    "firebase_url": "https://giftup-9999.firebaseio.com",
+    "project_id": "giftup-9999",
+    "storage_bucket": "giftup-9999.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251296526660:android:05382e8cc7838d89996711",
+        "android_client_info": {
+          "package_name": "com.example.giftup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251296526660-9mkc02s576p425leniubictbfbmk1hot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-uiihCbIzD4ATMQ58YSzHlwp7l6oq_Ys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251296526660-9mkc02s576p425leniubictbfbmk1hot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
