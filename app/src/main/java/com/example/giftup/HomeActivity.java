@@ -47,7 +47,10 @@ public class HomeActivity extends AppCompatActivity {
         // Check if user is signed in (non-null) and update UI accordingly.
         if(currentUser==null)
         {
-            startActivity(new Intent(HomeActivity.this, SignInActivity.class));
+            Intent loginIntent=new Intent(HomeActivity.this,SignInActivity.class);
+            loginIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            loginIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(loginIntent);
             finish();
         }
     }

@@ -75,7 +75,7 @@
         android:backgroundTint="#f2f2f2"
         android:ems="10"
         android:hint="Enter your number"
-        android:inputType="number"
+        android:inputType="number|phone"
         android:padding="12sp"
         android:textColor="@android:color/black"
         android:textColorHint="#808080"

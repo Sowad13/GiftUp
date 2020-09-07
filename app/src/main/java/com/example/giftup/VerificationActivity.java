@@ -49,17 +49,17 @@ public class VerificationActivity extends AppCompatActivity {
         verify.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String verificationcode=phone_number_2.getText().toString();
-                if(verificationcode.isEmpty())
+                String verify_code=phone_number_2.getText().toString();
+                if(verify_code.isEmpty())
                 {
                     feedback2.setText("Please enter the verification code to continue.");
                     feedback2.setVisibility(View.VISIBLE);
-                    progressBar2.setVisibility(View.VISIBLE);
-                    verify.setEnabled(false);
+                    //progressBar2.setVisibility(View.VISIBLE);
+                    //verify.setEnabled(false);
                 }
                 else
                 {
-                    PhoneAuthCredential credential= PhoneAuthProvider.getCredential(VerificationID, verificationcode);
+                    PhoneAuthCredential credential= PhoneAuthProvider.getCredential(VerificationID, verify_code);
                     signInWithPhoneAuthCredential(credential);
                 }
             }
@@ -73,8 +73,8 @@ public class VerificationActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             goHome();
-                            //startActivity(new Intent(VerificationActivity.this, HomeActivity.class));
-                            //finish();
+                            startActivity(new Intent(VerificationActivity.this, HomeActivity.class));
+                            finish();
                         } else {
                             if (task.getException() instanceof FirebaseAuthInvalidCredentialsException) {
                                 // The verification code entered was invalid
